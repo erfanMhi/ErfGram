@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="chatRoomScreen" alignment="CENTER" prefHeight="367.0" prefWidth="600.0" stylesheets="@../CSS/WlcPageStyle.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ErMedia.user.resources.controllers.ChatRoomController">
+   <children>
+      <Label fx:id="wellcomeLabel" alignment="CENTER" prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: ghostwhite;" text="Welcome" VBox.vgrow="SOMETIMES" />
+      <HBox prefHeight="370.0" prefWidth="438.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="330.0" prefWidth="235.0">
+               <children>
+                  <JFXButton fx:id="propertyButton" buttonType="RAISED" onAction="#settingShower" prefHeight="26.0" prefWidth="179.0" style="-: #3333;" text="Properties" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin></JFXButton>
+                  <JFXListView fx:id="friendsLv" prefHeight="304.0" prefWidth="193.0" />
+               </children>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" top="5.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="341.0" prefWidth="405.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <JFXTextArea fx:id="messageTA" editable="false" prefHeight="333.0" />
+                  <HBox prefHeight="12.0" prefWidth="479.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXTextField fx:id="messageTF" maxWidth="468.0" minWidth="427.0" onAction="#sendMessageHandler" prefHeight="32.0" prefWidth="427.0">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                        <JFXButton onAction="#fileSenderButtonHandler" prefHeight="46.0" prefWidth="52.0" text=" " HBox.hgrow="ALWAYS">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/Actions-mail-receive-icon.png" />
+                                 </image>
+                                 <viewport>
+                                    <Rectangle2D minX="5.0" minY="5.0" />
+                                 </viewport>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

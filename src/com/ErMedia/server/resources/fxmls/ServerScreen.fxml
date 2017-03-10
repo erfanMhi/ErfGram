@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox alignment="CENTER" prefHeight="360.0" prefWidth="521.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ErMedia.server.resources.controllers.ServerPageController">
+   <children>
+      <JFXTextArea fx:id="serverLogTA" maxWidth="714.0" minWidth="207.0" prefHeight="82.0" prefWidth="207.0" VBox.vgrow="ALWAYS" text="no connection">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </JFXTextArea>
+      <HBox alignment="CENTER" prefHeight="32.0" prefWidth="530.0">
+         <children>
+            <JFXButton fx:id="connectionButton" onAction="#runServer" prefHeight="32.0" prefWidth="101.0" text="Connect" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
