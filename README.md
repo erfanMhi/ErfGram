@@ -1,7 +1,7 @@
 #Hello
 hello guys!
 
-I'm erfan miahi and i want u to help me improve this project toghether.
+Im erfan mahi and i will be happy if u help me improve my project.
 
 
 # ErfGram
