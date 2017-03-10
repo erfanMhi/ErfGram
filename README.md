@@ -1,11 +1,11 @@
 #Hello
 hello guys!
 
-Im erfan mahi and i will be happy if u help me improve my project.
+Im erfan mahi and i will be happy if you help me improve my project.
 
 
 # ErfGram
 This project is a chat application, written with javafx.
 
 # Prerequisites
-u need to install jfoenix and javafx library for running this project.
+you need to install jfoenix and javafx library for running this project.
