@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="numberShowerScreen" prefHeight="340.0" prefWidth="245.0" stylesheets="@../CSS/WlcPageStyle.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ErMedia.user.resources.controllers.UserNumberListController">
+   <center>
+      <JFXListView fx:id="numbersLview" prefHeight="324.0" prefWidth="245.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </JFXListView>
+   </center>
+   <bottom>
+      <VBox alignment="TOP_CENTER" prefHeight="77.0" prefWidth="245.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="addNumbetTF" labelFloat="true" promptText="number to add" unFocusColor="#2a859e">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXButton fx:id="addNumberButton" buttonType="RAISED" onAction="#addNumberHandler" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: #3333;" text="add" textFill="#f5efef">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

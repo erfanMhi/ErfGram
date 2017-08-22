@@ -1,0 +1,40 @@
+#loginScreen {
+    -fx-background-image: url("../images/above-adventure-aerial-air.jpg");
+}
+#loginButton {
+    -fx-background-color: white;
+}
+#username {
+    /*-fx-accent: white;*/
+    -fx-background-color: white;
+}
+#registerButton {
+    -fx-background-color: gold;
+}
+
+#numberShowerScreen {
+    -fx-background-image: url("../images/horsehead-nebula-dark-nebula-constellation-orion-87646.jpg");
+}
+#numbersLview {
+    -fx-background-color: ghostwhite;
+}
+
+#addNumbetTF {
+    -fx-background-color: ghostwhite;
+}
+
+#addNumberButton {
+    -fx-background-color: aquamarine;
+}
+
+#chatRoomScreen {
+    -fx-background-image: url("../images/pexels-photo-29035.jpg");
+}
+
+#messageTF {
+    -fx-background-color: ghostwhite;
+}
+
+#propertyButton {
+    -fx-background-color: #e1e6ff;
+}

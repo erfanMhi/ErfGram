@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="loginScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="154.0" prefWidth="278.0" stylesheets="@../CSS/WlcPageStyle.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ErMedia.user.resources.controllers.MainController">
+   <children>
+      <JFXButton fx:id="loginButton" layoutX="53.0" layoutY="64.0" onAction="#loginHandler" prefHeight="26.0" prefWidth="163.0" text="Login" />
+      <JFXButton fx:id="registerButton" layoutX="95.0" layoutY="96.0" onAction="#registerHandler" prefHeight="26.0" prefWidth="83.0" text="Register" />
+      <JFXTextField fx:id="username" labelFloat="true" layoutX="50.0" layoutY="27.0" promptText="username" unFocusColor="#060a0d" />
+   </children>
+</AnchorPane>

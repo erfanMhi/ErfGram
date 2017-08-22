@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="361.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ErMedia.user.resources.controllers.SettingPageController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="358.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton onAction="#requestButtonHandler" prefHeight="71.0" prefWidth="231.0" text="requests" />
+            <JFXButton onAction="#addFriendButtonHandler" prefHeight="70.0" prefWidth="231.0" text="add friend" />
+            <JFXButton onAction="#levelSearchButtonHandler" prefHeight="70.0" prefWidth="231.0" text="level search" />
+            <JFXButton onAction="#showPathButtonHandler" prefHeight="72.0" prefWidth="231.0" text="show path" />
+            <JFXButton onAction="#addGroupButtonHandler" prefHeight="70.0" prefWidth="231.0" text="add group" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
